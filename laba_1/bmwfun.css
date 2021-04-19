@@ -1,0 +1,474 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 500px;
+}
+
+.slider{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.navigation{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 25px;
+  height: 5px;
+  background-color: #C0C0C0;
+  border-radius: 5px;
+  margin-left: 8px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.4 ease;
+}
+
+.bar:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+
+input[name = "r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: all 0.6 ease;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  transition: all 0.6 ease;
+}
+
+#r1:checked ~ #first{
+  margin-left: 0;
+}
+
+#r2:checked ~ #first{
+  margin-left: -20%;
+}
+
+#r3:checked ~ #first{
+  margin-left: -40%;
+}
+
+#r4:checked ~ #first{
+  margin-left: -60%;
+}
+
+#r5:checked ~ #first{
+  margin-left: -80%;
+}
+
+nav{
+  width: 100%;
+  height: 50px;
+  top: 10px;
+  position: absolute;
+}
+
+.menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.element{
+  margin-left: 2.08%;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+}
+
+.element a{
+  text-decoration: none;
+  color: white;
+}
+
+.element a:hover{
+  color: blue;
+}
+
+
+.search{
+  width: 200px;
+  height: 30px;
+  padding-left: 5px;
+  margin-left: 10%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.logotype{
+  width: 50px;
+  height: 50px;
+  margin-left: 2%;
+}
+
+.logotype img{
+  width: 100%;
+  height: 100%;
+}
+
+.nameSite{
+  margin-left: 18%;
+  margin-top: 3px;
+}
+
+#nofotter{
+  min-height: 100%;
+
+}
+
+#before{
+  height: 60px;
+}
+
+footer{
+  margin-top: -60px;
+  border-top: 2px solid silver;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+}
+
+footer span {
+  float: right;
+  padding-right: 10px;
+}
+
+footer span a {
+  text-decoration: none;
+}
+
+footer span  :hover {
+  text-decoration: underline;
+}
+
+
+
+.menu h1{
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 2px 0 1px black;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#scroll{
+  width: 15%;
+  min-height:100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #778899;
+}
+
+#scroll li a{
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #FFF0F5;
+  font-size: 0.9em;
+}
+
+#scroll li {
+padding-top: 10px;
+padding-left: 10px;
+}
+
+
+#scroll li :hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+#article{
+  width: 85%;
+  height: calc(100%-60px);
+  background-color: #D3D3D3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#article  h3, #article p{
+    padding: 15px;
+}
+
+#article h2{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#autoMain{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#nameTable{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#table{
+  width: 85%;
+  height: calc(100%-60px);
+  background-color: #D3D3D3;
+}
+
+.auto{
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  display: flex;
+}
+
+.name{
+  width: 35%;
+  height: 100%;
+  display: block;
+  border: 2px solid #696969;
+}
+
+.first{
+  width: 100%;
+  height: 25px;
+}
+
+.first h3{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.second{
+  width: 100%;
+  height: calc(100% - 25px);
+}
+
+.second img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.descryption{
+  width: 50%;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #696969;
+}
+
+.about{
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+
+.about form{
+  width: 100%;
+  height: 100%;
+}
+
+input[name = "but"]{
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFA500;
+  border-radius: 10px;
+  border: 2px solid #696969;
+  outline: none;
+}
+
+input[name = "but"]:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+input[name = "but"]:active{
+background-color: #FF8C00;
+}
+
+#lastAuto{
+  margin-bottom: 20px;
+}
+
+#formMain{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #D3D3D3;
+}
+#feedback{
+  width: 40%;
+  margin-left: 22.5%;
+  height: calc(100%-60px);
+}
+
+#nameForm{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.form label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.form input{
+  width: 60%;
+  height: 30px;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid silver;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.form input:focus{
+  border: 2px solid #4169E1;
+}
+
+textarea{
+  margin-left: 10px;
+  width: 50%;
+  height: 80px;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea:focus{
+  border: 2px solid #4169E1;
+}
+
+#send{
+  display: block;
+  width: 40%;
+  height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #696969;
+  border: 0;
+}
+
+#send:hover{
+  background-color: #A9A9A9;
+  cursor: pointer;
+}
+
+#album{
+  width: 85%;
+  height: 100%;
+  background-color: #D3D3D3;
+}
+#album h2{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.photo{
+  width: 80%;
+  margin-left: 10%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+@media (max-width:1070px){
+   .search{
+    margin-left: 1%;
+  }
+  .descryption{
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width:800px){
+  .element{
+    font-size: 0.9em;
+  }
+  .auto{
+    min-width: 200px;
+    height: 200px;
+  }
+  .name{
+    min-width: 200px;
+    height: 200px;
+  }
+  .descryption{
+    min-width: 200px;
+    height: 200px;
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+  #scroll{
+    min-width: 100px;
+  }
+}
+
+@media (max-width:650px){
+   .search{
+    margin-left: 1%;
+  }
+  .descryption{
+    font-size: 0.6em;
+  }
+  .nameSite{
+    margin-left: 2%;
+  }
+}
